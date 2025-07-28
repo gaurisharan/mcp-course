@@ -24,6 +24,7 @@ Tools are executable functions or actions that the AI model can invoke through t
 <hfoption id="python">
 
 ```python
+#python
 def get_weather(location: str) -> dict:
     """Get the current weather for a specified location."""
     # Connect to weather API and fetch data
@@ -38,6 +39,7 @@ def get_weather(location: str) -> dict:
 <hfoption id="javascript">
 
 ```javascript
+//javascript
 function getWeather(location) {
     // Connect to weather API and fetch data
     return {
@@ -66,6 +68,7 @@ Resources provide read-only access to data sources, allowing the AI model to ret
 <hfoption id="python">
 
 ```python
+#python
 def read_file(file_path: str) -> str:
     """Read the contents of a file at the specified path."""
     with open(file_path, 'r') as f:
@@ -76,6 +79,7 @@ def read_file(file_path: str) -> str:
 <hfoption id="javascript">
 
 ```javascript
+//javascript
 function readFile(filePath) {
     // Using fs.readFile to read file contents
     const fs = require('fs');
@@ -109,6 +113,7 @@ Prompts are predefined templates or workflows that guide the interaction between
 <hfoption id="python">
 
 ```python
+#python
 def code_review(code: str, language: str) -> list:
     """Generate a code review for the provided code snippet."""
     return [
@@ -127,6 +132,7 @@ def code_review(code: str, language: str) -> list:
 <hfoption id="javascript">
 
 ```javascript
+//javascript
 function codeReview(code, language) {
     return [
         {
@@ -159,6 +165,7 @@ Sampling allows Servers to request the Client (specifically, the Host applicatio
 <hfoption id="python">
 
 ```python
+#python
 def request_sampling(messages, system_prompt=None, include_context="none"):
     """Request LLM sampling from the client."""
     # In a real implementation, this would send a request to the client
@@ -172,6 +179,7 @@ def request_sampling(messages, system_prompt=None, include_context="none"):
 <hfoption id="javascript">
 
 ```javascript
+//javascript
 function requestSampling(messages, systemPrompt = null, includeContext = 'none') {
     // In a real implementation, this would send a request to the client
     return {
