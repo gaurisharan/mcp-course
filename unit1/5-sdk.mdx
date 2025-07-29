@@ -22,6 +22,7 @@ Let's explore how to implement each of the core primitives (Tools, Resources, an
 <Youtube id="exzrb5QNUis" />
 
 ```python
+#python
 from mcp.server.fastmcp import FastMCP
 
 # Create an MCP server
@@ -53,14 +54,18 @@ if __name__ == "__main__":
 
 Once you have your server implemented, you can start it by running the server script.
 
+Shell script-
 ```bash
 mcp dev server.py
 ```
+
+Here's how to do the same in javascript - 
 
 </hfoption>
 <hfoption id="javascript">
 
 ```javascript
+//javascript
 // index.mjs
 import {
   McpServer,
@@ -130,6 +135,7 @@ await server.connect(transport);
 
 Once you have your server implemented, you can start it by running the server script.
 
+Shell script-
 ```bash
 npx @modelcontextprotocol/inspector node ./index.mjs
 ```
